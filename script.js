@@ -13,7 +13,9 @@ document.addEventListener('DOMContentLoaded', function () {
             errorMessage.textContent = 'Please enter both username/email and password.';
         } else if (username !== Username || password !== Password) {
             errorMessage.textContent = 'Invalid username/email or password.';
+            document.getElementById('login-form').reset();
         } else {
+            document.getElementById('login-form').reset();
             window.location.href = 'home.html';
         }
     });
